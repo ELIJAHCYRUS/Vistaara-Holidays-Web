@@ -791,6 +791,7 @@ footer {
 
   .nav__header {
     background-color: var(--white);
+    padding: 0.3rem 1rem;
   }
 
   .nav__logo .logo,
