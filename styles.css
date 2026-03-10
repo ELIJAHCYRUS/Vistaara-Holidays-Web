@@ -56,12 +56,12 @@
 }
 
 .logo img {
-  height: 180px;
+  height: 90px;
   max-width: 100%;
 }
 
 img {
-  display: flex;
+  display: block;
   width: 100%;
 }
 
@@ -445,7 +445,7 @@ header::before {
 }
 
 .swiper-slide {
-  min-width: 375px;
+  min-width: 100%;
 }
 
 .client__card {
@@ -768,4 +768,35 @@ footer {
   .destination__grid {
     gap: 2rem;
   }
+}
+
+@media (max-width: 768px) {
+
+  .header__content {
+    padding-top: 2rem;
+  }
+
+  .header__content h1 {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+
+  .header__content p {
+    font-size: 0.9rem;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .nav__header {
+    background-color: var(--white);
+  }
+
+  .nav__logo .logo,
+  .nav__menu__btn,
+  .nav__links a {
+    color: var(--primary-color); /* optional: make text visible on white background */
+  }
+
 }
