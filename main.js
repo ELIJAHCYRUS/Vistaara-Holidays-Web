@@ -74,3 +74,30 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 20,
   loop: true,
 });
+
+// LOGIN MODAL
+const modal = document.getElementById("loginModal");
+
+const loginBtn = document.getElementById("loginBtn");
+const loginBtnMobile = document.getElementById("loginBtnMobile");
+
+const closeBtn = document.querySelector(".close");
+
+loginBtn.onclick = function () {
+  modal.style.display = "flex";
+};
+
+loginBtnMobile.onclick = function () {
+  modal.style.display = "flex";
+};
+
+closeBtn.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
