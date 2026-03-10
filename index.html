@@ -33,10 +33,14 @@
         <li><a href="#tour">TOUR</a></li>
         <li><a href="#package">PACKAGE</a></li>
         <li><a href="#contact">CONTACT</a></li>
-        <li><a href="#">BOOK TRIP</a></li>
+        <li><button id="loginBtnMobile" class="btn">Login / Sign Up</button></li>
       </ul>
       <div class="nav__btns">
-        <button class="btn">BOOK TRIP</button>
+        <button id="loginBtn" class="login-pro">
+          <i class="ri-user-3-fill"></i>
+          LOGIN / REGISTER
+        <i class="ri-arrow-down-s-fill"></i>
+      </button>
       </div>
     </nav>
 
@@ -428,6 +432,27 @@
         Copyright © 2024 Web Design Mastery. All rights reserved.
       </div>
     </footer>
+
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+
+    <span class="close">&times;</span>
+
+    <h2 class="login-title">Login to Vistaara Holidays</h2>
+
+    <input class="phone-input" type="text" placeholder="Phone number">
+
+    <button class="continue-btn">Continue</button>
+
+    <div class="divider">or</div>
+
+    <button class="social-btn">Continue with Google</button>
+    <button class="social-btn">Continue with Apple</button>
+    <button class="social-btn">Continue with Email</button>
+    <button class="social-btn">Continue with Facebook</button>
+
+  </div>
+</div>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
