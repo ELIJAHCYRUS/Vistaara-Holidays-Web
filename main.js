@@ -101,3 +101,23 @@ window.onclick = function (event) {
   }
 };
 
+document.addEventListener("DOMContentLoaded", () => {
+  const googleBtn = document.getElementById("google-login-btn");
+  if (googleBtn) {
+    googleBtn.addEventListener("click", () => {
+      window.loginWithGoogle();
+    });
+  }
+});
+
+  // Passwordless email login
+  const emailNextBtn = document.getElementById("email-next-btn");
+  const emailInput = document.getElementById("email-input");
+
+  if (emailNextBtn) {
+    emailNextBtn.addEventListener("click", () => {
+      const email = emailInput.value.trim();
+      if (!email) return alert("Please enter your email");
+      window.sendMagicLink(email);
+    });
+  }

@@ -440,13 +440,13 @@
 
     <h2 class="login-title">Login to Vistaara Holidays</h2>
 
-    <input class="phone-input" type="text" placeholder="Phone number">
+    <input id="email-input" type="email" placeholder="Enter email to login..">
 
-    <button class="continue-btn">Continue</button>
+    <button id="email-next-btn" type="button">Continue</button>
 
     <div class="divider">or</div>
 
-    <button class="social-btn">Continue with Google</button>
+    <button class="google-login-btn" onclick="loginWithGoogle()">Continue with Google</button>
     <button class="social-btn">Continue with Apple</button>
     <button class="social-btn">Continue with Email</button>
     <button class="social-btn">Continue with Facebook</button>
@@ -456,6 +456,7 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="firebase.js"></script>
     <script src="main.js"></script>
     <script>
     (function(){

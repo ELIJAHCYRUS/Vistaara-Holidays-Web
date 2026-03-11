@@ -881,7 +881,7 @@ margin-bottom:20px;
 color:#333;
 }
 
-.phone-input{
+#email-input{
 width:100%;
 padding:14px;
 border:1px solid #ddd;
@@ -890,7 +890,7 @@ margin-bottom:15px;
 font-size:14px;
 }
 
-.continue-btn{
+#email-next-btn{
 width:100%;
 padding:14px;
 border:none;
@@ -929,4 +929,21 @@ top:15px;
 right:20px;
 font-size:22px;
 cursor:pointer;
+}
+
+.google-login-btn{
+width:100%;
+padding:13px;
+margin-bottom:10px;
+border:1px solid #ddd;
+border-radius:8px;
+background:white;
+cursor:pointer;
+font-size:14px;
+}
+
+.google-login-btn:hover{
+background:rgba(255,255,255,0.6);;
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
 }
